@@ -17,7 +17,6 @@
         <div class="input-group"><label>Temperature (in degree Celsius)</label><input id="temperature" type="number" step="0.1" required></div>
         <div class="input-group"><label>Humidity (in %)</label><input id="humidity" type="number" step="0.1" required></div>
         <div class="input-group"><label>pH</label><input id="ph" type="number" step="0.1" required></div>
-        <div class="input-group"><label>Rainfall (in mm)</label><input id="rainfall" type="number" step="0.1" required></div>
         <button type="submit">Get Recommendation</button>
       </form>
       <div id="result" style="margin-top:12px;font-weight:bold;"></div>
@@ -34,7 +33,7 @@
       temperature: parseFloat(document.getElementById('temperature').value),
       humidity: parseFloat(document.getElementById('humidity').value),
       ph: parseFloat(document.getElementById('ph').value),
-      rainfall: parseFloat(document.getElementById('rainfall').value)
+      
     };
 
     const username = localStorage.getItem("username") || "guest";
